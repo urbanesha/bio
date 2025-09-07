@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urbanesha – Profile</title>
+  <meta name="description" content="Urbanesha company profile – contacts, and featured items." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <!-- Top profile card -->
+    <section class="card">
+      <header class="profile">
+        <div class="avatar" aria-hidden="true">
+          <!-- Ganti file logo di assets/images/logo.png -->
+          <img src="assets/images/logo.png" alt="Urbanesha logo" />
+        </div>
+        <div>
+          <h1>Urbanesha</h1>
+          <div class="muted">
+            <span class="email" id="email">info@urbanesha.com</span>
+            <button class="pill" id="copyEmail" title="Copy email" type="button">
+              <!-- Copy icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Webinar RANEUS Registration (featured at top) -->
+      <a
+        class="item icon webinar"
+        href="https://its-ac-id.zoom.us/meeting/register/JuVURWMbTle2VzoWG_BOhA"
+        target="_blank" rel="noopener"
+        aria-label="Webinar RANEUS Registration on Zoom"
+        style="margin: 20px;"
+      >
+        <div class="app-icon">
+          <img src="assets/images/zoom-us.png" alt="Zoom icon" style="width:36px;height:36px;" />
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+          <div>
+            <div class="title">Webinar RANEUS Registration</div>
+            <div class="subtitle">its-ac-id.zoom.us</div>
+          </div>
+          <!-- Logo RANEUS di kanan -->
+          <img src="assets/images/raneus-logo.webp" alt="RANEUS logo" style="width:140px; height:50px; border-radius:8px; background:#fff; border:1px solid #e5e7eb; object-fit:contain;" />
+        </div>
+      </a>
+    </section>
+
+    <!-- Our Profile list (single column) -->
+    <h2 class="section-title">Our Profile</h2>
+    <section class="profile-grid" style="margin: 20px;">
+      <!-- Kiri: LinkedIn, YouTube, WhatsApp -->
+      <div class="profile-left grid" style="gap:16px;">
+        <!-- YouTube -->
+        <a class="item icon yt" href="https://www.youtube.com/@urbanesha" target="_blank" rel="noopener">
+          <div class="app-icon vertical">
+            <!-- SVG ICON -->
+            <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19 3.5 12 3.5 12 3.5s-7 0-9.4.6A3 3 0 0 0 .5 6.2 31.9 31.9 0 0 0 0 12a31.9 31.9 0 0 0 .6 5.8 3 3 0 0 0 2.1 2.1C5 20.5 12 20.5 12 20.5s7 0 9.4-.6a3 3 0 0 0 2.1-2.1 31.9 31.9 0 0 0 .6-5.8 31.9 31.9 0 0 0-.6-5.8z" fill="#ff0000"/>
+              <path d="M9.75 8.75v6.5L15.5 12l-5.75-3.25z" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="icon-label">
+            <div class="title">Urbanesha</div>
+            <div class="subtitle">YouTube Channel</div>
+            <button id="subscribeBtn" class="cta" type="button" aria-live="polite">
+              Subscribe <span id="subCount">232</span>
+            </button>
+          </div>
+        </a>
+
+        <!-- LinkedIn -->
+        <a class="item icon li" href="https://www.linkedin.com/company/urbanesha/" target="_blank" rel="noopener">
+          <div class="app-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4.1 0 4.8 2.7 4.8 6.2V24h-4v-7.1c0-1.7 0-3.9-2.4-3.9s-2.8 1.9-2.8 3.8V24h-4V8z" fill="#0a66c2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="title">Urbanesha</div>
+            <div class="subtitle">linkedin.com</div>
+          </div>
+        </a>
+
+        <!-- WhatsApp -->
+        <a class="item icon wa" href="https://wa.me/6282143188838" target="_blank" rel="noopener">
+          <div class="app-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 .5a11.5 11.5 0 0 0-9.9 17.3L1 24l6.4-1.7A11.5 11.5 0 1 0 12 .5z" fill="#25D366"/>
+              <path d="M17.2 14.3c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-1.7-.9-2.9-1.7-4-3.6-.3-.5.3-.5.8-1.6.1-.2.1-.3 0-.5s-.4-1.1-.6-1.6c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.7.7-1.1 1.5-1.1 2.5s.8 2.1.9 2.2c.1.2 1.6 2.5 3.8 3.5 2.3 1.1 2.3.7 2.7.7.4 0 1.4-.5 1.6-1 .2-.5.2-.9.1-1z" fill="#fff"/>
+            </svg>
+          </div>
+          <div>
+            <div class="title">Contact Us</div>
+            <div class="subtitle">WhatsApp</div>
+          </div>
+        </a>
+      </div>
+      <!-- Kanan: Website (memanjang ke bawah) -->
+      <div class="profile-right">
+        <a
+          class="item icon website tall"
+          href="https://home.urbanesha.com"
+          target="_blank" rel="noopener"
+        >
+          <div class="app-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#2e6bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M2 12h20"></path>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <div class="website-body">
+            <div class="title">Website</div>
+            <div class="subtitle">home.urbanesha.com</div>
+            <img class="thumb" src="assets/images/thumb_web.webp" alt="Website thumbnail" />
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <div class="footer">© <span id="year"></span> Urbanesha</div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
